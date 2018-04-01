@@ -1,0 +1,655 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+
+
+
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background: #f2f2f2;
+	overflow:hidden;
+	height:845px;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#img{position:relative; width:40px; height:55px; float:left; cursor:pointer;}
+
+#log{position:relative; width:50px; height:25px;   background:#930608; float:left; text-align:center; line-height:25px; box-shadow:2px 2px 2px gray; border-radius:8px; cursor:pointer; left:170px;  }
+
+#log a{text-decoration:none; color:white; font-size:12px;}
+
+#log:hover{background:#a30507; }
+
+
+
+
+
+
+
+#navbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#menu{position:relative; max-width:none;  background:none; box-shadow:none; left:-37px;}
+
+#menu ul li{list-style:none; background:#222; width:80px; position:relation; text-align:Center; margin:0px; height:33px; line-height:33px; box-shadow:2px 2px 2px gray;  }
+
+#menu ul li a{text-decoration:none; color:white; font-size:12px; display:block; }
+
+#menu ul li:hover{background:#930608;}
+
+#menu{display:block;}
+
+#inp{position:relative; left:200px; top:-253px; width:80px; height:17px; } 
+
+input{font-size:9px;}
+
+#ser{position:relative; left:198px; transform:rotate(16deg); top:10px; cursor:pointer; top:-255px; width:20px; height:20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+#leftbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#n{position:relative; font-size:13px;  top:10px; left:5px;}
+
+//#chg{position:relative; width:650px; height:350px; background:pink; left:5px;  border:1px solid black;}
+
+#o{position:Relative; width:300px; height:50px;  background:white; border:1px solid black; left:5px; top:10px;}
+
+#oo{position:relative; left:10px; top:0px; font-size:12px;}
+
+#o input{width:50px; height:23px; font-size:13px; background:#EFF0F3 ; color:black; left:220px; position:relative; top:-37px; border:1px solid black}
+
+
+
+
+#p{position:Relative; width:300px; height:50px;  background:white; border:1px solid black; left:5px; top:11px;}
+
+#pp{position:relative; left:10px; top:0px; font-size:12px;}
+
+#p input{width:50px; height:23px; font-size:13px; background:#EFF0F3 ; color:black; left:220px; position:relative; top:-37px; border:1px solid black}
+
+
+
+#q{position:Relative; width:300px; height:50px;  background:white; border:1px solid black; left:5px; top:12px;}
+
+#qq{position:relative; left:10px; top:0px; font-size:12px;}
+
+#q input{width:50px; height:23px; font-size:13px; background:#EFF0F3 ; color:black; left:220px; position:relative; top:-37px; border:1px solid black}
+
+
+
+
+
+#r{position:Relative; width:300px; height:50px;  background:white; border:1px solid black; left:5px; top:13px;}
+
+#rr{position:relative; left:10px; top:0px; font-size:12px;}
+
+#r input{width:50px; height:23px; font-size:13px; background:#EFF0F3 ; color:black; left:220px; position:relative; top:-37px; border:1px solid black}
+
+
+#done input{width:50px; height:23px; font-size:13px; background:#F0C350 ; color:black; left:5px; position:relative; top:20px; border:1px solid black; box-shadow:1px 1px 1px gray} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+#article {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#rightbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+
+
+
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#tablefoo{position:relative; left:10px; top:10px; width:0px; font-size:10px; }
+
+#foo{position:relative; max-width:auto; height:180px; background:#222; top:50px;  color:#f2f2f2;   }
+
+#topcat{position:relative; left:50px; }
+
+#topcat2{position:relative; left:50px; top:35px; }
+
+#line2{width:230px; height:1px; background:white; position:relative; left:760px; top:0px;}
+
+table ul li{list-style:none; position:relative; left:-48px; margin:8px; top:-2px; display:block; }
+
+#tablefoo ul li a{text-decoration:none; color:#bfbfbf;}
+
+#tablefoo ul li a:hover{color: #ffffff;}
+
+#social{display:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	overflow:hidden;
+	height:850px;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#img{position:relative; width:50px; height:70px; float:left; cursor:pointer;}
+
+#log{position:relative; width:50px; height:25px;   background:#930608; float:left; text-align:center; line-height:25px; box-shadow:2px 2px 2px gray; border-radius:8px; cursor:pointer; left:520px;  }
+
+#log a{text-decoration:none; color:white; font-size:12px;}
+
+#log:hover{background:#a30507; }
+
+
+
+
+
+
+
+
+#navbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#menu{position:relative; max-width:1190px; height:40px; background:#222; box-shadow:3px 3px 3px gray; left:10px; display:block; }
+
+#menu ul li{list-style:none; float:left;  width:60px; line-height:40px; position:relative; left:-50px;  background:#222; margin:0px; height:40px;  box-shadow:none;  }
+
+#menu ul li a{text-decoration:none; color:white; font-size:10px; display:block; text-align:Center;}
+
+#menu ul li:hover{background:#930608;}
+
+#menu input{height:13px; width:80px;}
+
+#banner{cursor:pointer;width:1190px; height:300px;}
+
+#inp{position:relative; left:50px; top:10px;} 
+
+input{font-size:9px;}
+
+#ser{position:relative; left:50px; transform:rotate(16deg); top:-28px; cursor:pointer; top:10px; width:20px; height:20px;}
+
+
+
+
+
+
+
+
+
+
+
+#leftbar {
+	clear:both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#n{position:relative; font-size:20px;  top:10px; left:50px;}
+
+//#chg{position:relative; width:650px; height:350px; background:pink; left:200px;  border:1px solid black;}
+
+#o{position:Relative; width:600px; height:70px;  background:white; border:1px solid black; left:50px; top:10px;}
+
+#oo{position:relative; left:20px; top:5px; font-size:14px;}
+
+#o input{width:70px; height:25px; font-size:14px; background:#EFF0F3 ; color:black; left:490px; position:relative; top:-38px; border:1px solid black}
+
+
+
+
+#p{position:Relative; width:600px; height:70px;  background:white; border:1px solid black; left:50px; top:11px;}
+
+#pp{position:relative; left:20px; top:5px; font-size:14px;}
+
+#p input{width:70px; height:25px; font-size:14px; background:#EFF0F3 ; color:black; left:490px; position:relative; top:-38px; border:1px solid black}
+
+
+
+#q{position:Relative; width:600px; height:70px;  background:white; border:1px solid black; left:50px; top:12px;}
+
+#qq{position:relative; left:20px; top:5px; font-size:14px;}
+
+#q input{width:70px; height:25px; font-size:14px; background:#EFF0F3 ; color:black; left:490px; position:relative; top:-38px; border:1px solid black}
+
+
+
+
+
+#r{position:Relative; width:600px; height:70px;  background:white; border:1px solid black; left:50px; top:13px;}
+
+#rr{position:relative; left:20px; top:5px; font-size:14px;}
+
+#r input{width:70px; height:25px; font-size:14px; background:#EFF0F3 ; color:black; left:490px; position:relative; top:-38px; border:1px solid black}
+
+
+#done input{width:70px; height:28px; font-size:14px; background:#F0C350 ; color:black; left:50px; position:relative; top:20px; border:1px solid black; box-shadow:1px 1px 1px gray} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#article {
+	clear:both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+
+
+
+
+#rightbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#tablefoo{position:relative;   left:70px; top:10px; width:550px; font-size:12px; }
+
+#foo{position:relative; max-width:1200px; height:290px; background:#222; top:55px;  color:#f2f2f2;   }
+
+#topcat{position:relative; left:50px; }
+
+#topcat2{position:relative; left:50px; top:35px; }
+
+#line2{width:230px; height:1px; background:white; position:relative; left:110px; top:0px;}
+
+table ul li{list-style:none; position:relative; left:-48px; margin:8px; top:-2px; display:block; }
+
+#tablefoo ul li a{text-decoration:none; color:#bfbfbf;}
+
+#tablefoo ul li a:hover{color: #ffffff;}
+
+#social{position:Relative; left:110px; cursor:pointer; display:block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	overflow:hidden;
+	background:#f2f2f2;
+	height:930px;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#img{position;relative; cursor:pointer; float:left; width:60px; height:80px; }
+	
+#log{position:relative; width:70px; height:30px; background:#930608; float:left; text-align:center; line-height:30px; box-shadow:2px 2px 2px gray; border-radius:8px; cursor:pointer; left:980px; top:10px;}
+
+#log a{text-decoration:none; color:white; font-size:13px;}
+
+#log:hover{background:#a30507; }
+
+
+
+
+
+#navbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#menu{position:relative; max-width:1190px; height:50px; background:#222; box-shadow:3px 3px 3px gray; left:10px; display:block; }
+
+#menu ul li{list-style:none; float:left;  width:100px; line-height:50px; position:relative; left:-50px;  background:#222; margin:0px; height:50px;  box-shadow:none;  }
+
+#menu ul li a{text-decoration:none; color:white; font-size:15px; display:block; text-align:Center;}
+
+#menu ul li:hover{background:#930608;}
+
+#menu input{height:20px; width:200px;}
+
+
+
+#inp{position:relative; left:135px; top:12px;} 
+
+input{font-size:13px;}
+
+#ser{position:relative; left:132px; transform:rotate(16deg); top:10px; cursor:pointer; top:none; width:25px; height:25px;}
+
+
+
+
+
+
+
+
+
+
+#leftbar {
+	clear: both
+	float: left;
+	margin-left: 0;
+	width:100%;
+	display: block;
+	
+}
+
+#n{position:relative; font-size:25px;  top:10px; left:200px;}
+
+//#chg{position:relative; width:650px; height:350px; background:pink; left:200px;  border:1px solid black;}
+
+#o{position:Relative; width:650px; height:80px;  background:white; border:1px solid black; left:200px; top:10px;}
+
+#oo{position:relative; left:20px; top:5px; font-size:15px;}
+
+#o input{width:80px; height:30px; font-size:15px; background:#EFF0F3 ; color:black; left:550px; position:relative; top:-40px; border:1px solid black}
+
+
+
+
+#p{position:Relative; width:650px; height:80px;  background:white; border:1px solid black; left:200px; top:11px;}
+
+#pp{position:relative; left:20px; top:5px; font-size:15px;}
+
+#p input{width:80px; height:30px; font-size:15px; background:#EFF0F3 ; color:black; left:550px; position:relative; top:-40px; border:1px solid black}
+
+
+
+#q{position:Relative; width:650px; height:80px;  background:white; border:1px solid black; left:200px; top:12px;}
+
+#qq{position:relative; left:20px; top:5px; font-size:15px;}
+
+#q input{width:80px; height:30px; font-size:15px; background:#EFF0F3 ; color:black; left:550px; position:relative; top:-40px; border:1px solid black}
+
+
+
+
+#r{position:Relative; width:650px; height:80px;  background:white; border:1px solid black; left:200px; top:13px;}
+
+#rr{position:relative; left:20px; top:5px; }
+
+#r input{width:80px; height:30px; font-size:15px; background:#EFF0F3 ; color:black; left:550px; position:relative; top:-40px; border:1px solid black}
+
+
+#done input{width:80px; height:30px; font-size:15px; background:#F0C350 ; color:black; left:200px; position:relative; top:30px; border:1px solid black; box-shadow:1px 1px 1px gray} 
+
+
+
+
+
+
+
+
+#article {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width:100%;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+#rightbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+
+
+
+
+
+
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+#tablefoo{position:relative;   left:100px; top:10px; width:950px; font-size:13px; }
+
+#foo{position:relative; max-width:1200px; height:290px; background:#222; top:90px;  color:#f2f2f2;   }
+
+#topcat{position:relative; left:50px; }
+
+#topcat2{position:relative; left:50px; top:35px; }
+
+#line2{width:230px; height:1px; background:white; position:relative; left:760px; top:0px;}
+
+table ul li{list-style:none; position:relative; left:-48px; margin:8px; top:-2px; display:block; }
+
+#tablefoo ul li a{text-decoration:none; color:#bfbfbf;}
+
+#tablefoo ul li a:hover{color: #ffffff;}
+
+#social{position:Relative; left:757px; cursor:pointer; display:block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

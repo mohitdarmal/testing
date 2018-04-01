@@ -1,0 +1,621 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+
+
+
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background: #f2f2f2;
+	overflow:hidden;
+	height:982px;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#img{position:relative; width:40px; height:55px; float:left; cursor:pointer;}
+
+#log{position:relative; width:50px; height:25px;   background:#930608; float:left; text-align:center; line-height:25px; box-shadow:2px 2px 2px gray; border-radius:8px; cursor:pointer; left:170px;  }
+
+#log a{text-decoration:none; color:white; font-size:12px;}
+
+#log:hover{background:#a30507; }
+
+
+
+
+
+
+
+#navbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#menu{position:relative; max-width:none;  background:none; box-shadow:none; left:-37px;}
+
+#menu ul li{list-style:none; background:#222; width:80px; position:relation; text-align:Center; margin:0px; height:33px; line-height:33px; box-shadow:2px 2px 2px gray;  }
+
+#menu ul li a{text-decoration:none; color:white; font-size:12px; display:block; }
+
+#menu ul li:hover{background:#930608;}
+
+#menu{display:block;}
+
+#inp{position:relative; left:200px; top:-253px; width:80px; height:17px; } 
+
+input{font-size:9px;}
+
+#ser{position:relative; left:198px; transform:rotate(16deg); top:10px; cursor:pointer; top:-255px; width:20px; height:20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+#leftbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#con1{position:relative; left:10px; top:0px; font-size:16px; }
+
+#con3{position:relative; left:10px; top:-10px; font-size:11px; }
+
+#con2{position:Relative; left:10px; width:280px; height:2px; background:black ; top:-22px; box-shadow:1px 1px 1px gray} 
+
+
+
+#su1{position:relative; left:10px; top:0px; width:35px; height:35px;}
+
+#su2{position:relative; left:50px; top:-40px; font-size:12px;}
+
+#su input{position:Relative; left:50px; top:-40px; width:100px; height:15px; font-size:9px;}
+
+
+
+#ma1{position:relative; left:10px; width:35px; height:30px; top:-5px;}
+
+#ma2{position:relative; left:55px; font-size:12px; top:-45px}
+
+#ma a{position:Relative; left:55px; font-size:12px; top:-58px; color:#930608}
+
+
+
+
+
+
+
+
+#article {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#ca1{position:relative; top:-10px; width:35px; height:35px; left:10px;}
+
+#ca2{position:relative; top:-55px; left:55px; font-size:12px;}
+
+#ca3{position:relative; top:-65px; left:55px; font-size:12px;}
+
+#ca4{position:relative; top:-83px; left:70px; font-size:10px;}
+
+
+
+#pro1{position:relative; width:35px; height:35px; top:-70px; left:10px;}
+
+#pro2{position:relative; top:-110px; left:55px; font-size:12px;}
+
+#pro a{position:Relative;  font-size:12px; top:-123px; left:55px; color:#930608}
+
+
+
+
+
+
+
+
+
+
+#rightbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: none;
+}
+
+
+
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#tablefoo{position:relative; left:10px; top:10px; width:0px; font-size:10px; }
+
+#foo{position:relative; max-width:auto; height:180px; background:#222; top:-80px;  color:#f2f2f2;   }
+
+#topcat{position:relative; left:50px; }
+
+#topcat2{position:relative; left:50px; top:35px; }
+
+#line2{width:230px; height:1px; background:white; position:relative; left:760px; top:0px;}
+
+table ul li{list-style:none; position:relative; left:-48px; margin:8px; top:-2px; display:block; }
+
+#tablefoo ul li a{text-decoration:none; color:#bfbfbf;}
+
+#tablefoo ul li a:hover{color: #ffffff;}
+
+#social{display:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	overflow:hidden;
+	height:820px;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#img{position:relative; width:50px; height:70px; float:left; cursor:pointer;}
+
+#log{position:relative; width:50px; height:25px;   background:#930608; float:left; text-align:center; line-height:25px; box-shadow:2px 2px 2px gray; border-radius:8px; cursor:pointer; left:520px;  }
+
+#log a{text-decoration:none; color:white; font-size:12px;}
+
+#log:hover{background:#a30507; }
+
+
+
+
+
+
+
+
+#navbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#menu{position:relative; max-width:1190px; height:40px; background:#222; box-shadow:3px 3px 3px gray; left:10px; display:block; }
+
+#menu ul li{list-style:none; float:left;  width:60px; line-height:40px; position:relative; left:-50px;  background:#222; margin:0px; height:40px;  box-shadow:none;  }
+
+#menu ul li a{text-decoration:none; color:white; font-size:10px; display:block; text-align:Center;}
+
+#menu ul li:hover{background:#930608;}
+
+#menu input{height:13px; width:80px;}
+
+#banner{cursor:pointer;width:1190px; height:300px;}
+
+#inp{position:relative; left:50px; top:10px;} 
+
+input{font-size:9px;}
+
+#ser{position:relative; left:50px; transform:rotate(16deg); top:-28px; cursor:pointer; top:10px; width:20px; height:20px;}
+
+
+
+
+
+
+
+
+
+
+
+#leftbar {
+	clear:none;
+	float: left;
+	margin-left: 0;
+	width: 50%;
+	display: block;
+}
+
+#con1{position:relative; left:100px; top:30px; font-size:22px; }
+
+#con3{position:relative; left:100px; top:17px; font-size:12px; }
+
+#con2{position:Relative; left:100px; width:550px; height:2px; background:black ; top:5px; box-shadow:1px 1px 1px gray} 
+
+
+#su1{position:relative; left:85px; top:20px; width:50px; height:50px;}
+
+#su2{position:relative; left:140px; top:-37px; font-size:16px;}
+
+#su input{position:Relative; left:140px; top:-37px; width:140px; height:25px; font-size:12px;}
+
+
+
+#ma1{position:relative; left:95px; width:45px; height:40px; top:10px;}
+
+#ma2{position:relative; left:155px; font-size:17px; top:-45px}
+
+#ma a{position:Relative; left:155px; font-size:15px; top:-58px; color:#930608}
+
+
+
+
+
+
+
+
+#article {
+	clear: none;
+	float: left;
+	margin-left: 0;
+	width: 50%;
+	display: block;
+}
+
+#ca1{position:relative; top:153px; width:40px; height:40px; left:50px;}
+
+#ca2{position:relative; top:100px; left:105px; font-size:17px;}
+
+#ca3{position:relative; top:83px; left:105px; font-size:14px;}
+
+#ca4{position:relative; top:65px; left:125px; font-size:11px;}
+
+
+
+#pro1{position:relative; width:40px; height:40px; top:100px; left:50px;}
+
+#pro2{position:relative; top: 55px; left:105px; font-size:14px;}
+
+#pro a{position:Relative;  font-size:15px; top:40px; left:105px; color:#930608}
+
+
+
+
+#rightbar {
+	clear: none;
+	float: left;
+	margin-left: 0;
+	width: 40%;
+	display: block;
+}
+
+
+
+
+
+
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#tablefoo{position:relative;   left:70px; top:10px; width:550px; font-size:12px; }
+
+#foo{position:relative; max-width:1200px; height:290px; background:#222; top:0px;  color:#f2f2f2;   }
+
+#topcat{position:relative; left:50px; }
+
+#topcat2{position:relative; left:50px; top:35px; }
+
+#line2{width:230px; height:1px; background:white; position:relative; left:110px; top:0px;}
+
+table ul li{list-style:none; position:relative; left:-48px; margin:8px; top:-2px; display:block; }
+
+#tablefoo ul li a{text-decoration:none; color:#bfbfbf;}
+
+#tablefoo ul li a:hover{color: #ffffff;}
+
+#social{position:Relative; left:110px; cursor:pointer; display:block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	overflow:hidden;
+	background:#f2f2f2;
+	height:880px;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#img{position;relative; cursor:pointer; float:left; width:60px; height:80px; }
+	
+#log{position:relative; width:70px; height:30px; background:#930608; float:left; text-align:center; line-height:30px; box-shadow:2px 2px 2px gray; border-radius:8px; cursor:pointer; left:980px; top:10px;}
+
+#log a{text-decoration:none; color:white; font-size:13px;}
+
+#log:hover{background:#a30507; }
+
+
+
+
+
+#navbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#menu{position:relative; max-width:1190px; height:50px; background:#222; box-shadow:3px 3px 3px gray; left:10px; display:block; }
+
+#menu ul li{list-style:none; float:left;  width:100px; line-height:50px; position:relative; left:-50px;  background:#222; margin:0px; height:50px;  box-shadow:none;  }
+
+#menu ul li a{text-decoration:none; color:white; font-size:15px; display:block; text-align:Center;}
+
+#menu ul li:hover{background:#930608;}
+
+#menu input{height:20px; width:200px;}
+
+
+
+#inp{position:relative; left:135px; top:12px;} 
+
+input{font-size:13px;}
+
+#ser{position:relative; left:132px; transform:rotate(16deg); top:10px; cursor:pointer; top:none; width:25px; height:25px;}
+
+
+
+
+
+
+
+
+
+
+#leftbar {
+	clear: none;
+	float: left;
+	margin-left: 0;
+	width:35%;
+	display: block;
+	
+}
+
+#con1{position:relative; left:100px; top:30px; font-size:22px; }
+
+#con3{position:relative; left:100px; top:17px; font-size:12px; }
+
+#con2{position:Relative; left:100px; width:550px; height:2px; background:black ; top:5px; box-shadow:1px 1px 1px gray} 
+
+
+
+#su1{position:relative; left:85px; top:20px; width:50px; height:50px;}
+
+#su2{position:relative; left:140px; top:-37px; font-size:16px;}
+
+#su input{position:Relative; left:140px; top:-37px; width:140px; height:25px; font-size:12px;}
+
+
+
+#ma1{position:relative; left:95px; width:45px; height:40px; top:10px;}
+
+#ma2{position:relative; left:155px; font-size:17px; top:-45px}
+
+#ma a{position:Relative; left:155px; font-size:15px; top:-58px; color:#930608}
+
+
+
+
+
+
+
+
+#article {
+	clear:none;
+	float: left;
+	margin-left: 0;
+	width:50%;
+	display: block;
+}
+
+#ca1{position:relative; top:133px; width:40px; height:40px; left:0px;}
+
+#ca2{position:relative; top:80px; left:55px; font-size:17px;}
+
+#ca3{position:relative; top:70px; left:55px; font-size:14px;}
+
+#ca4{position:relative; top:57px; left:70px; font-size:11px;}
+
+
+
+#pro1{position:relative; width:40px; height:40px; top:80px; left:0px;}
+
+#pro2{position:relative; top:30px; left:55px; font-size:17px;}
+
+#pro a{position:Relative;  font-size:15px; top:12px; left:60px; color:#930608}
+
+
+
+
+
+#rightbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+
+
+
+
+
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+#tablefoo{position:relative;   left:100px; top:10px; width:950px; font-size:13px; }
+
+#foo{position:relative; max-width:1200px; height:290px; background:#222; top:90px;  color:#f2f2f2;   }
+
+#topcat{position:relative; left:50px; }
+
+#topcat2{position:relative; left:50px; top:35px; }
+
+#line2{width:230px; height:1px; background:white; position:relative; left:760px; top:0px;}
+
+table ul li{list-style:none; position:relative; left:-48px; margin:8px; top:-2px; display:block; }
+
+#tablefoo ul li a{text-decoration:none; color:#bfbfbf;}
+
+#tablefoo ul li a:hover{color: #ffffff;}
+
+#social{position:Relative; left:757px; cursor:pointer; display:block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
